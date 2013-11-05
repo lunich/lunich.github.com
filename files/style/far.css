@@ -1,0 +1,152 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background: #000080;
+  font: 1em courier new;
+  font-weight: bold;
+}
+.content
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.menu
+{
+  background-color: #008080;
+}
+.menu .menu-item
+{
+  padding: 0 1em;
+  background-color: #008080;
+  float: left;
+}
+.menu .menu-item a,
+.menu .menu-item a:visited
+{
+  padding: 0 1em;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+.menu .menu-item a:hover
+{
+  color: #FFFFFF;
+  background-color: #000000;
+}
+.panel-holder
+{
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  float: left;
+}
+.panel
+{
+  margin: 0.2em;
+  border: 0.3em double #00FFFF;
+  height: 50%;
+}
+.panel .right
+{
+  text-align: right;
+}
+.panel .marker
+{
+  padding: 0 0.2em;
+  float: left;
+}
+.panel .header
+{
+  text-align: center;
+}
+.panel .size
+{
+  border-left: 0.1em solid #00FFFF;
+  text-align: center;
+  padding: 0 0.2em;
+  float: right;
+}
+.panel .item,
+.panel .message
+{
+  margin: 0 0.2em;
+}
+.panel .item a,
+.panel .item a:visited
+{
+  color: #00FFFF;
+  text-decoration: none;
+  display: block;
+}
+.panel .item a:hover
+{
+  background-color: #008080;
+}
+/* MENU BODIES */
+.menu-holder
+{
+  background-color: #008080;
+  position: absolute;
+}
+.menu-holder .menu-content
+{
+  margin: 0.2em;
+  border: 0.3em double #FFFFFF;
+}
+.menu-holder .menu-sub-item
+{
+}
+.menu-holder .menu-sub-item a
+{
+  padding: 0 1em;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+.menu-holder .menu-sub-item a:hover
+{
+  background-color: #000000;
+}
+/* FOOTER */
+.footer
+{
+  position: absolute;
+  bottom: 0;
+  padding: 1em 0;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+}
+/* COLORS */
+.yellow
+{
+  color: #FFFF00;
+}
+.cyan
+{
+  color: #00FFFF;
+}
+.white
+{
+  color: #FFFFFF;
+}
+.black
+{
+  color: #000000;
+}
+/* CLEARER */
+.clear
+{
+  clear: both;
+}
+/* WARNINGS, ERRORS */
+.warning
+{
+  text-align: center;
+  padding: 0 0.2em;
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
