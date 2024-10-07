@@ -1,22 +1,208 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <title>dima.lunich</title>
-  <link href="style/far.css" rel="stylesheet" media="screen" type="text/css" />
-  <script type="text/javascript" src="js/prototype.js"></script>
-  <script type="text/javascript" src="js/application.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    var links = new Array('index', 'projects', 'files', 'about');
-    selection = 'index';
+    window.onload = function () {
+      console.log(tailwind);
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['Merriweather', 'serif'],
+            },
+          }
+        }
+      };
+    }
   </script>
 </head>
-<body onload="change_sel(selection); $('cmd-line').focus();">
-  <div class='table'>
-    <pre><div>/dima.lunich</div><div><span class="sort">n</span></div><div id='index' class='element' onclick="change_sel('index')"><a id='link-index' href='index.html'>home</a>           &lt;DIR&gt;    18.06.2009 17:24</div><div class='element' id='projects' onclick="change_sel('projects')"><a id='link-projects' href='projects.html'>projects</a>       &lt;DIR&gt;    18.06.2009 17:24</div><div class='element' id='files' onclick="change_sel('files')"><a id='link-files' href='files/index.html'>files</a>          &lt;DIR&gt;    26.10.2009 17:24</div><div class='element' id='about' onclick="change_sel('about')"><a id='link-about' href='about.html'>about</a>          &lt;DIR&gt;    18.06.2009 17:24</div></pre>
+<body>
+  <div class="container flex m-auto my-8 font-serif print:m-4">
+    <div class="w-2/3 mr-8 text-lg">
+      <section class="mb-12">
+        <h1 class="text-6xl font-bold mb-4">Dmytro Strumilenko</h1>
+        <p>Senior Ruby developer / Software architect / Senior Web developer / Head of development</p>
+      </section>
+      <section class="mb-12">
+        <h2 class="text-2xl font-sans font-bold uppercase my-4 text-blue-500">Summary</h2>
+        <ul class="list-disc list-inside ml-8">
+          <li>Over 20 years of professional experience in dev</li>
+          <li>Deep understanding of web application development, architecture, infrastructure</li>
+          <li>TDD/BDD</li>
+          <li>Strong skills in software development and architecture</li>
+          <li>Knowledges of best practices and software design patterns</li>
+          <li>Constant improvement of tech-skills, tools and platforms knowledges</li>
+          <li>Engineering approach</li>
+          <li>Good communication skills</li>
+        </ul>
+      </section>
+      <section class="mb-12">
+        <article class="mb-8">
+          <h2 class="text-2xl font-sans font-bold uppercase my-4 text-blue-500">Experience</h2>
+          <h3 class="text-xl mb-2">
+            <span class="font-bold">Head of Development, System Architect, Senior Developer</span>
+            &mdash;
+            <span class="font-bold italic">Hero Gaming AB,</span>
+            <span class="italic">Sweden</span>
+          </h3>
+          <h4 class="text-xl mb-2">2015-01 &ndash; present</h4>
+          <p>
+            <span class="font-bold">Responsibilities:</span>
+            <ul class="list-disc list-inside ml-8">
+              <li>Developing and support multiple backend applications</li>
+              <li>System architecture</li>
+              <li>Infrastructure</li>
+              <li>Code review</li>
+              <li>Managing dev and devops teams</li>
+              <li>Mentoring team members</li>
+              <li>Collecting, formulating and revisiting requirements</li>
+              <li>Working closely with domain experts</li>
+            </ul>
+          </p>
+          <p>
+            <span class="font-bold">Tools and technologies:</span>
+            <span>Ruby, Ruby on Rails, PostgreSQL, Redis, ELK stack, Linux, Ansible, Capistrano, Terraform, AWS, JS, Git</span>
+          </p>
+        </article>
+
+        <article class="mb-8">
+          <h3 class="text-xl mb-2">
+            <span class="font-bold">Team Lead, Senior Ruby developer</span>
+            &mdash;
+            <span class="font-bold italic">Gera IT,</span>
+            <span class="italic">Ukraine</span>
+          </h3>
+          <h4 class="text-xl mb-2">2010-03 &ndash; 2015-01</h4>
+          <p>
+            <span class="font-bold">Responsibilities:</span>
+            <ul class="list-disc list-inside ml-8">
+              <li>Developing various applications</li>
+              <li>System architecture</li>
+              <li>Infrastructure</li>
+              <li>Code review</li>
+              <li>Mentoring team members</li>
+            </ul>
+          </p>
+          <p>
+            <span class="font-bold">Tools and technologies:</span>
+            <span>Ruby, Ruby on Rails, PostgreSQL, MySQL, MongoDB, Redis, Linux, Ansible, Capistrano, JS, Git</span>
+          </p>
+        </article>
+
+        <article class="mb-8">
+          <h3 class="text-xl mb-2">
+            <span class="font-bold">Senior software developer</span>
+            &mdash;
+            <span class="font-bold italic">WEB100 Technologies,</span>
+            <span class="italic">Ukraine</span>
+          </h3>
+          <h4 class="text-xl mb-2">2005-10 &ndash; 2010-03</h4>
+          <p>
+            <span class="font-bold">Responsibilities:</span>
+            <ul class="list-disc list-inside ml-8">
+              <li>Developing various applications</li>
+              <li>System architecture</li>
+              <li>Infrastructure</li>
+              <li>Code review</li>
+            </ul>
+          </p>
+          <p>
+            <span class="font-bold">Tools and technologies:</span>
+            <span>Ruby, Ruby on Rails, PostgreSQL, MySQL, MongoDB, C#, C, PHP, Redis, Linux, Ansible, Capistrano, JS, Git</span>
+          </p>
+        </article>
+
+        <article class="mb-8">
+          <h3 class="text-xl mb-2">
+            <span class="font-bold">Senior game developer</span>
+            &mdash;
+            <span class="font-bold italic">BTE Software,</span>
+            <span class="italic">Ukraine</span>
+          </h3>
+          <h4 class="text-xl mb-2">2005-06 &ndash; 2005-10</h4>
+          <p>
+            <span class="font-bold">Responsibilities:</span>
+            <ul class="list-disc list-inside ml-8">
+              <li>3D video game development</li>
+            </ul>
+          </p>
+          <p>
+            <span class="font-bold">Tools and technologies:</span>
+            <span>C++, OpenGL, Shaders, GLSL, HLSL</span>
+          </p>
+        </article>
+
+        <article class="mb-8">
+          <h3 class="text-xl mb-2">
+            <span class="font-bold">Senior game developer, Game developer, Junior game developer</span>
+            &mdash;
+            <span class="font-bold italic">Bravo Interactive,</span>
+            <span class="italic">Ukraine</span>
+          </h3>
+          <h4 class="text-xl mb-2">2001-02 &ndash; 2005-06</h4>
+          <p>
+            <span class="font-bold">Responsibilities:</span>
+            <ul class="list-disc list-inside ml-8">
+              <li>3D video game development</li>
+              <li>Creating a game engine</li>
+              <li>Developing games for various platforms</li>
+            </ul>
+          </p>
+          <p>
+            <span class="font-bold">Tools and technologies:</span>
+            <span>C++, OpenGL, OpenAL, DirectX, Shaders, WinAPI</span>
+          </p>
+        </article>
+      </section>
+    </div>
+
+    <div class="w-1/3">
+      <address class="mb-12">
+        <p class="font-bold">Malmö, Sweden</p>
+        <p class="flex items-center font-bold">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 mr-2">
+            <path fill-rule="evenodd" d="M5.404 14.596A6.5 6.5 0 1 1 16.5 10a1.25 1.25 0 0 1-2.5 0 4 4 0 1 0-.571 2.06A2.75 2.75 0 0 0 18 10a8 8 0 1 0-2.343 5.657.75.75 0 0 0-1.06-1.06 6.5 6.5 0 0 1-9.193 0ZM10 7.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" clip-rule="evenodd" />
+          </svg>
+          <a class="text-blue-500" href="tel:+46739761860">+46-73-976-18-60</a>
+        </p>
+        <p class="flex items-center font-bold">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5 mr-2">
+            <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 0 1 3.5 2h1.148a1.5 1.5 0 0 1 1.465 1.175l.716 3.223a1.5 1.5 0 0 1-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 0 0 6.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 0 1 1.767-1.052l3.223.716A1.5 1.5 0 0 1 18 15.352V16.5a1.5 1.5 0 0 1-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 0 1 2.43 8.326 13.019 13.019 0 0 1 2 5V3.5Z" clip-rule="evenodd" />
+          </svg>
+          <a class="text-blue-500" href="mailto:dima.lunich@gmail.com">dima.lunich@gmail.com</a>
+        </p>
+        <p><a class="text-blue-500" href="https://github.com/lunich">github.com/lunich</a></p>
+        <p><a class="text-blue-500" href="https://www.linkedin.com/in/lunich">linkedin.com/in/lunich</a></p>
+      </address>
+
+      <section class="mb-8 text-base">
+        <h2 class="text-2xl font-sans font-bold uppercase my-4 text-blue-500">Buzz Words</h2>
+        <p>Ruby, Rails, TDD, BDD, PostgreSQL, MySQL, Redis, Git, Linux, AWS, ELK, JS, Docker, Containers, Terraform, Capistrano, Ansible, Chef, MongoDB, C++, C, OpenGL, PHP, Ajax, JSON, SOAP, C#, .NET, DirectX, RVM, JQuery, Websockets</p>
+      </section>
+
+      <section class="mb-8 text-base">
+        <h2 class="text-2xl font-sans font-bold uppercase my-4 text-blue-500">Education</h2>
+        <p class="font-bold">Master degree in microelectronics</p>
+        <p>Kyiv Polytechnic University</p>
+        <p>1998 &ndash; 2004</p>
+      </section>
+
+      <section class="mb-8 text-base">
+        <h2 class="text-2xl font-sans font-bold uppercase my-4 text-blue-500">Languages</h2>
+        <p>English &ndash; advanced</p>
+        <p>Swedish &ndash; limited</p>
+        <p>Ukrainian &ndash; native</p>
+        <p>Russian &ndash; native</p>
+      </section>
+    </div>
   </div>
-  <pre>
-    <div class='cmd'>/dima.lunich&gt;<input id='cmd-line'/></div></pre>
-  <pre><div class='copy'>&copy; dima.lunich, 2009&ndash;2010</div></pre>
 </body>
 </html>
